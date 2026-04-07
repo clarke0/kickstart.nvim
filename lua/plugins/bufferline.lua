@@ -7,9 +7,9 @@ return {
     'famiu/bufdelete.nvim',
   },
   keys = {
-    { '<Tab>', ':BufferLineCycleNext<CR>', desc = 'Next buffer' },
-    { '<S-Tab>', ':BufferLineCyclePrev<CR>', desc = 'Prev buffer' },
-    { '<leader>x', ':Bdelete<CR>', desc = 'Close buffer' },
+    { '<Tab>', '<cmd>BufferLineCycleNext<CR>', desc = 'Next buffer' },
+    { '<S-Tab>', '<cmd>BufferLineCyclePrev<CR>', desc = 'Prev buffer' },
+    { '<leader>x', '<cmd>Bdelete<CR>', desc = 'Close buffer' },
   },
   opts = {},
 }
