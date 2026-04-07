@@ -6,5 +6,8 @@ return {
     'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
   },
+  keys = {
+    { '<leader>e', ':Neotree toggle<CR>', desc = 'Toggle file tree' },
+  },
   opts = {},
 }

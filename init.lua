@@ -167,9 +167,6 @@ vim.o.confirm = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
--- Neo-Tree
-vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle file tree' })
-
 -- Lazy menu
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Open Lazy' })
 
