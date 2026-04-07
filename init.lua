@@ -226,6 +226,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
+-- Terraform filetype detection
+
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -606,6 +608,8 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
+        ruby_lsp = {},
+        terraformls = {},
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
@@ -822,7 +826,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'rose-pine', 'moon', or 'dawn'.
-      vim.cmd.colorscheme 'rose-pine'
+      vim.cmd.colorscheme 'rose-pine-main'
     end,
   },
 
