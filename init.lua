@@ -169,7 +169,8 @@ vim.o.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
-
+vim.keymap.set('i', '<M-3>', '#', { noremap = true })
+vim.keymap.set('c', '<M-3>', '#', { noremap = true })
 -- Lazy menu
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Open Lazy' })
 
@@ -227,11 +228,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 -- Terraform filetype detection
-vim.filetype.add({
+vim.filetype.add {
   extension = {
     tfvars = 'terraform',
   },
-})
+}
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -954,7 +955,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to get going.
- { import = 'plugins' },
+  { import = 'plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
